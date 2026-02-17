@@ -1,6 +1,6 @@
 # Operating Systems
 
-* [ ] 
+Course labs and assignments from **CS3102 Operating Systems** — process scheduling, shell scripting, and Linux system introspection using `/proc` and standard tools.
 
 ---
 
