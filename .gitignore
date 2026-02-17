@@ -1,0 +1,21 @@
+# Editor / IDE
+tempCodeRunnerFile.cpp
+*.swp
+*~
+.DS_Store
+
+# Build outputs
+*.out
+*.o
+*.exe
+
+# Lab 4 parser outputs (generated at runtime)
+cs.txt
+cpu.txt
+pc.txt
+mem.txt
+memFree.txt
+context.txt
+usr.txt
+sys.txt
+idle.txt

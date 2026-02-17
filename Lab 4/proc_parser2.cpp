@@ -10,12 +10,12 @@ int main(){
     for (int i = 0; i< printrate/readrate; i++) {
     system("vmstat -s| grep 'CPU context switches' >> cs.txt"); // number of context switches 
     system("top -b -di n1|grep Cpu >> cpu.txt"); // perecntage of cpu idle 
-    system("ps axu | WC -l >> pc.txt"); // no of process creations 
+    system("ps axu | wc -l >> pc.txt"); // no of process creations 
     system("grep MemFree /proc/meminfo >> mem.txt"); // free memory in system
     sleep (readrate);
     }
 
-system("awk '{ print $2}' mem. txt >> memFree.txt"); // free memory values 
+system("awk '{ print $2}' mem.txt >> memFree.txt"); // free memory values 
 system("awk '{ print $1 }' cs.txt >> context.txt"); // no of context switches values 
 system("awk '{print $2 }' cpu.txt >> usr.txt"); // user time on cpu values 
 system("awk '{ print $4}' cpu.txt >> sys.txt"); // sys cpu usage values 
